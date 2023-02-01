@@ -124,10 +124,12 @@ body {
     align-items: center;
 }
 
-
 .botones img {
     width: 40px;
-    background-color: var(--fondo-reproductor);
+}
+
+.botones img:hover {
+    opacity: 40%;
 }
 
 .anterior,
@@ -139,3 +141,8 @@ body {
 button {
     border: none;
 }
+
+button:active{
+    transform: scale(1.5);
+}
+

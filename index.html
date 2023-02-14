@@ -8,24 +8,110 @@
     <title>Reproductor</title>
     <link rel="stylesheet" href="styles.css" />
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans+Narrow&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
 </head>
 
 <body>
-    <div class="container">
+    
 
+     <!-- Swiper -->
+  <div class="swiper mySwiper">
+    <div class="swiper-wrapper">
+        
+      <div class="swiper-slide">
         <div class="reproductor">
             <div class="portada">
                 <img src="img/7-rings.jpg" />
             </div>
 
-
-            <audio id="audio" controls>
+            <audio id="audio1" controls>
                 <source type="audio/wav" src="/canciones/7 Rings.mp3">
+            </audio>
+            <div class="cancion">
+                <h1 class="titulo">7 Rings</h1>
+                <h2 class="artista">Ariana Grande</h2>
+            </div>
+            <div class="duracion">
+                <h3 class="comienzo">00:00</h3>
+                <div class="barra-cancion">
+                    <div class="tiempo"></div>
+                </div>
+                <h3 class="fin">00:00</h3>
+            </div>
+            <div class="botones">
+                <button class="anterior">
+                    <img src="icon/anterior.png">
+                </button>
+                <button id="play1" class="play">
+                    <img onclick="reproducir1()" src="icon/play.png">
+                </button>
+                <button id="pausa1" class="pausa" onclick="pause1()">
+                    <img src="icon/pausa.png">
+                </button>
+                <button class="siguiente">
+                    <img src="icon/siguiente.png">
+                </button>
+            </div>
+        </div>
+      </div>
+
+
+      <div class="swiper-slide">
+        <div class="reproductor">
+            <div class="portada">
+                <img src="img/god-is-a-woman.jpg" />
+            </div>
+            <audio id="audio2" controls>
+                <source type="audio/wav" src="/canciones/God is a woman.mp3">
+            </audio>
+            <div class="cancion">
+                <h1 class="titulo">God is a woman</h1>
+                <h2 class="artista">Ariana Grande</h2>
+            </div>
+            <div class="duracion">
+                <h3 class="comienzo">00:00</h3>
+                <div class="barra-cancion">
+                    <div class="tiempo"></div>
+                </div>
+                <h3 class="fin">00:00</h3>
+            </div>
+            <div class="botones">
+                <button class="anterior">
+                    <img src="icon/anterior.png">
+                </button>
+                <button id="play2" class="play">
+                    <img onclick="reproducir2()" src="icon/play.png">
+                </button>
+                <button id="pausa2" class="pausa" onclick="pause2()">
+                    <img src="icon/pausa.png">
+                </button>
+
+                <button class="siguiente">
+                    <img src="icon/siguiente.png">
+                </button>
+            </div>
+        </div>
+
+
+      </div>
+
+
+      <div class="swiper-slide">
+
+
+        <div class="reproductor">
+            <div class="portada">
+                <img src="img/positions.jpg" />
+            </div>
+
+
+            <audio id="audio3" controls>
+                <source type="audio/wav" src="/canciones/Positions.mp3">
             </audio>
 
 
             <div class="cancion">
-                <h1 class="titulo">Titulo</h1>
+                <h1 class="titulo">Positions</h1>
                 <h2 class="artista">Ariana Grande</h2>
             </div>
 
@@ -44,11 +130,11 @@
                     <img src="icon/anterior.png">
                 </button>
 
-                <button id="play" class="play">
-                    <img onclick="reproducir()" src="icon/play.png">
+                <button id="play3" class="play">
+                    <img onclick="reproducir3()" src="icon/play.png">
                 </button>
 
-                <button id="pausa" class="pausa" onclick="pause()">
+                <button id="pausa3" class="pausa" onclick="pause3()">
                     <img src="icon/pausa.png">
                 </button>
 
@@ -62,9 +148,18 @@
         </div>
 
 
+
+      </div>
+
+
+
+      
     </div>
+  
+  </div>
 
-
+      <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <script src="app.js"></script>
 </body>
 

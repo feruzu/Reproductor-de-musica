@@ -1,5 +1,5 @@
 :root {
-    --fondo: #dbbfd279;
+    --fondo: #fdfdfdf3;
     --fondo-reproductor: #ffffff;
     --fondo-barra: #dbbfd279;
     --fuente: 'PT Sans Narrow', sans-serif;
@@ -75,6 +75,7 @@ body {
     background-color: var(--fondo-barra);
     margin-top: 8px;
     border-radius: 20px;
+    cursor: default;
 }
 
 .tiempo {
@@ -93,6 +94,7 @@ body {
     border-radius: 50%;
     background: black;
     position: absolute;
+    cursor: default;
 }
 
 .tiempo:before {
@@ -153,10 +155,6 @@ button:active{
     display: none
     }
 
-
-
-
-
     .swiper {
         width: 100%;
         height: 100%;
@@ -164,10 +162,10 @@ button:active{
 
     .swiper-slide {
       font-size: 18px;
-      background: #fff;
       display: flex;
       justify-content: center;
       align-items: center;
+      cursor: pointer;
     }
 
  

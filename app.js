@@ -1,8 +1,8 @@
 // Variables botones
-let anterior = document.querySelector(".anterior");
+let anterior = document.querySelectorAll(".anterior");
 let play = document.querySelector(".play");
 let pausa = document.querySelector(".pausa");
-let siguiente = document.querySelector(".siguiente");
+let siguiente = document.querySelectorAll(".siguiente");
 let duracion = document.querySelector("#duracion-cancion");
 let portada = document.querySelector(".portada");
 
@@ -25,8 +25,7 @@ function pause1(){
     var audio1 = document.getElementById("audio1");
     audio1.pause(); 
     document.getElementById("play1").style.display="block";
-    document.getElementById("pausa1").style.display="none";
-    
+    document.getElementById("pausa1").style.display="none";  
 }
 
 function reproducir2(){
@@ -40,8 +39,7 @@ function pause2(){
   var audio2 = document.getElementById("audio2");
   audio2.pause(); 
   document.getElementById("play2").style.display="block";
-  document.getElementById("pausa2").style.display="none";
-  
+  document.getElementById("pausa2").style.display="none"; 
 }
 
 function reproducir3(){
@@ -55,11 +53,20 @@ function pause3(){
   var audio3 = document.getElementById("audio3");
   audio3.pause(); 
   document.getElementById("play3").style.display="block";
-  document.getElementById("pausa3").style.display="none";
-  
+  document.getElementById("pausa3").style.display="none"; 
 }
 
 
+// Siguiente
+
+
+
+
+
+
+
+
+// Anterior 
 
 
 

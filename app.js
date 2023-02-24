@@ -53,14 +53,26 @@ function pause3(){
 
 // Siguiente
 
+function otraCancion(){
+    audio1.currentTime = 0;
+    audio1.pause();
+    document.getElementById("play1").style.display="block";
+    document.getElementById("pausa1").style.display="none"; 
+
+    audio2.currentTime = 0;
+    audio2.pause();
+    document.getElementById("play2").style.display="block";
+    document.getElementById("pausa2").style.display="none"; 
+
+    audio3.currentTime = 0;
+    audio3.pause();
+    document.getElementById("play3").style.display="block";
+    document.getElementById("pausa3").style.display="none";
+}
 
 
 
 
-
-
-
-// Anterior 
 
 
 

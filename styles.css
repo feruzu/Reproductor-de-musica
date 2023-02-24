@@ -147,25 +147,25 @@ button {
     border: none;
 }
 
-button:active{
+button:active {
     transform: scale(1.5);
 }
 
-#audio1, #audio2, #audio3{
+#audio1,
+#audio2,
+#audio3 {
     display: none
-    }
+}
 
-    .swiper {
-        width: 100%;
-        height: 100%;
-      }
+.swiper {
+    width: 100%;
+    height: 100%;
+}
 
-    .swiper-slide {
-      font-size: 18px;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      cursor: pointer;
-    }
-
- 
+.swiper-slide {
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}

@@ -15,7 +15,7 @@
 
 
     <!-- Swiper -->
-    <div class="swiper mySwiper">
+    <div class="swiper" >
         <div class="swiper-wrapper">
 
             <div class="swiper-slide">
@@ -40,7 +40,7 @@
                     </div>
                     <div class="botones">
                         <button class="anterior" onclick="otraCancion()">
-                            <img src="icon/anterior.png">
+                            <img src="icon/anterior.png" id="primera">
                         </button>
                         <button id="play1" class="play">
                             <img onclick="reproducir1()" src="icon/play.png">
@@ -140,7 +140,7 @@
                         </button>
 
                         <button class="siguiente">
-                            <img src="icon/siguiente.png" onclick="otraCancion()">
+                            <img src="icon/siguiente.png" id="ultima">
                         </button>
                     </div>
 
@@ -151,6 +151,8 @@
         </div>
 
     </div>
+
+    
 
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>

@@ -4,11 +4,18 @@ let play = document.querySelector(".play");
 let pausa = document.querySelector(".pausa");
 let siguiente = document.querySelectorAll(".siguiente");
 let duracion = document.querySelector("#duracion-cancion");
+let comienzo = document.querySelector(".comienzo");
+let fin = document.querySelector(".fin");
 let portada = document.querySelector(".portada");
+
+let tiempo = document.querySelector('.tiempo');
 
 let audio1 = document.getElementById("audio1");
 let audio2 = document.getElementById("audio2");
 let audio3 = document.getElementById("audio3");
+
+
+
 
 function reproducir1() {
   audio1.play();

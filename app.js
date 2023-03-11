@@ -14,8 +14,16 @@ let audio1 = document.getElementById("audio1");
 let audio2 = document.getElementById("audio2");
 let audio3 = document.getElementById("audio3");
 
+//* Duracion cancion *//
+
+audioNumeroUno();
+function audioNumeroUno(){
+
+comienzo.innerHTML = `00:00`;
+fin.innerHTML = `3:05`;
 
 
+}
 
 function reproducir1() {
   audio1.play();

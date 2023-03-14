@@ -16,25 +16,45 @@ let audio3 = document.getElementById("audio3");
 
 //* Duracion cancion *//
 
-audioNumeroUno();
-function audioNumeroUno(){
+let tiempoo = (min = seg = "0" + 0),
+  startTiempo;
 
-comienzo.innerHTML = `00:00`;
+
+
+function losSeg(){
+  comienzo.innerHTML = min + `:` +seg;
+}
+
+comienzo.innerHTML = `00:00`
 fin.innerHTML = `3:05`;
 
 
-}
+
 
 function reproducir1() {
   audio1.play();
   document.getElementById("play1").style.display = "none";
   document.getElementById("pausa1").style.display = "block";
+
+  startTiempo = setInterval(() => {
+    seg++;
+    seg = seg < 10 ? "0" + seg : seg;
+
+    if (seg === 60) {
+      min++;
+      min = min < 10 ? "0" + min : min;
+      seg = "0" + 0;
+    }
+
+    losSeg();
+  }, 1000);
 }
 
 function pause1() {
   audio1.pause();
   document.getElementById("play1").style.display = "block";
   document.getElementById("pausa1").style.display = "none";
+  clearInterval(startTiempo);
 }
 
 function reproducir2() {

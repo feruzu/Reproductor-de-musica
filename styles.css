@@ -152,10 +152,14 @@ button:active {
     transform: scale(1.5);
 }
 
-#audio1,
-#audio2,
-#audio3 {
-    display: none
+audio::-webkit-media-controls-play-button,
+     audio::-webkit-media-controls-panel {
+     background-color: #ffffff;
+     color: #ffffff;
+     }
+
+audio::-webkit-media-controls-play-button {
+    display: none;
 }
 
 #ultima, #primera {

@@ -67,58 +67,9 @@ body {
 }
 
 
-/* Barra de reproduccion */
-.barra-cancion {
-    width: 100%;
-    height: 6px;
-    margin-inline: 20px;
-    background-color: var(--fondo-barra);
-    margin-top: 8px;
-    border-radius: 20px;
-    cursor: default;
-}
-
-.tiempo {
-    width: 7px;
-    height: 7px;
-    transform: rotate(45deg);
-    background: black;
-    position: relative;
-}
-
-.tiempo:before,
-.tiempo:after {
-    content: "";
-    height: 7px;
-    width: 7px;
-    border-radius: 50%;
-    background: black;
-    position: absolute;
-    cursor: default;
-}
-
-.tiempo:before {
-    top: 0;
-    left: -4px;
-}
-
-.tiempo:after {
-    top: -4px;
-}
-
-.duracion {
-    display: flex;
-    margin-top: 30px;
-}
-
-.comienzo,
-.fin {
-    margin: 0;
-}
-
 /* Botones */
 .botones {
-    margin-top: 30px;
+    margin-top: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -152,14 +103,24 @@ button:active {
     transform: scale(1.5);
 }
 
+audio {
+    margin-top: 20px;
+}
+
+
 audio::-webkit-media-controls-play-button,
      audio::-webkit-media-controls-panel {
      background-color: #ffffff;
-     color: #ffffff;
      }
 
 audio::-webkit-media-controls-play-button {
     display: none;
+}
+
+audio::-webkit-media-controls-current-time-display,
+audio::-webkit-media-controls-time-remaining-display {
+    font-weight: bolder;
+    font-size: 15px;
 }
 
 #ultima, #primera {

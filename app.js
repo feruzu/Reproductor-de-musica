@@ -8,7 +8,6 @@ let comienzo = document.querySelector(".comienzo");
 let fin = document.querySelector(".fin");
 let portada = document.querySelector(".portada");
 
-let tiempo = document.querySelector('.tiempo');
 
 let audio1 = document.getElementById("audio1");
 let audio2 = document.getElementById("audio2");

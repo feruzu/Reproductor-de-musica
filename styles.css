@@ -150,7 +150,7 @@ audio::-webkit-media-controls-time-remaining-display {
 
 
 /* Responsive */
-@media (max-width: 500px) {
+@media (max-width: 200px) {
     .reproductor {
         width: 200px;
         height: 420px;

@@ -61,6 +61,7 @@ body {
 
 .titulo {
     margin: 10px;
+    color: #bbbdbe;
 }
 
 .artista {
@@ -186,3 +187,5 @@ audio::-webkit-media-controls-time-remaining-display {
     }
 
 }
+
+touch-action:none;

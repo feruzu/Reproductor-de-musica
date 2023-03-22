@@ -151,7 +151,7 @@ audio::-webkit-media-controls-time-remaining-display {
 
 
 /* Responsive */
-@media (max-width: 200px) {
+@media (max-width: 300px) {
     .reproductor {
         width: 200px;
         height: 420px;
@@ -187,5 +187,3 @@ audio::-webkit-media-controls-time-remaining-display {
     }
 
 }
-
-touch-action:none;

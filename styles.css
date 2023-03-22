@@ -64,7 +64,7 @@ body {
 }
 
 .artista {
-    margin: 10px 0 10px 0;
+    margin: 10px;
 }
 
 
@@ -78,6 +78,9 @@ body {
 
 .botones img {
     width: 40px;
+    margin: 0 15px;
+    margin-top: -10px;
+    filter: invert(91%) sepia(51%) saturate(2931%) hue-rotate(280deg) brightness(87%) contrast(84%);
 }
 
 .botones img:hover {
@@ -107,16 +110,14 @@ button:active {
 audio {
     margin-top: 20px;
     background-color: white;
+    margin-bottom: 20px;
+    border-radius: 20px;
 }
 
 
 audio::-webkit-media-controls-play-button,
-     audio::-webkit-media-controls-panel {
-     background-color: #ffffff!important;
-     }
-
-audio::-webkit-media-controls-play-button {
-    display: none!important;
+audio::-webkit-media-controls-panel {
+    background-color: #ffffff !important;
 }
 
 audio::-webkit-media-controls-current-time-display,
@@ -125,8 +126,9 @@ audio::-webkit-media-controls-time-remaining-display {
     font-size: 15px;
 }
 
-#ultima, #primera {
-    opacity: 20%;
+#ultima,
+#primera {
+    opacity: 35%;
 }
 
 .swiper {
@@ -144,41 +146,43 @@ audio::-webkit-media-controls-time-remaining-display {
 .swiper-container {
     width: 100%;
     height: 100%;
-  }
+}
 
 
-  /* Responsive */
-@media (max-width: 500px) { 
-     .reproductor {
+/* Responsive */
+@media (max-width: 500px) {
+    .reproductor {
         width: 200px;
         height: 420px;
-     }
+    }
 
-     .portada img {
+    .portada img {
         width: 200px;
         border-radius: 10px;
     }
 
     audio {
         width: 200px;
-        margin-top: 0px;
+        margin-top: 10px;
     }
 
     .botones img {
         width: 30px;
+        margin-top: -25px;
     }
 
     audio::-webkit-media-controls-current-time-display,
     audio::-webkit-media-controls-time-remaining-display {
-    font-weight: bolder;
-    font-size: 12px;
-}
-.titulo {
-    font-size: 30px;
-}
+        font-weight: bolder;
+        font-size: 12px;
+    }
 
-.artista {
-    font-size: 20px;
-}
-    
+    .titulo {
+        font-size: 30px;
+    }
+
+    .artista {
+        font-size: 20px;
+    }
+
 }
